@@ -1,8 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Enter to Win!</title>
+    <title>Enter to Win a Switch!</title>
     <link href="survey.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Enter to Win a Nintendo Switch!</h1>
+    <div id="description">
+      <p>You now have the chance to win a brand new nintendo switch!</p>
+    </div>
+    <form id="survey-form">
+      <h2>Enter your name and email to be contacted if you're a winner!</h2>
+      <label for="name" id="name-label">
+        Name:
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        />
+      </label>
+      <label for="email" id="email=label">
+        Email:
+        <input
+          id="email"
+          type="text"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+      </label>
+      <hr />
+      <h2>Guess a number between 1 and 200:</h2>
+      <label for="number" id="number-label">
+        Number:
+        <input
+          id="number"
+          type="number"
+          name="number"
+          min="1"
+          max="200"
+          placeholder="Enter a Number"
+          required
+        />
+      </label>
+      <hr />
+      <h2>What is your age range?</h2>
+      <label for="dropdown">
+        Color:
+        <select id="dropdown" name="age" required>
+          <option value="young">Under 18</option>
+          <option value="adult">18-30</option>
+          <option value="middleaged">31-64</option>
+          <option value="old">65+</option>
+        </select>
+      </label>
+      <hr />
+      <h2>Potential Color?</h2>
+      <label for="original">
+        <input id="original" type="radio" name="color" /> Original
+      </label>
+      <label for="lightblue">
+        <input id="lightblue" type="radio" name="color" />Light Blue
+      </label>
+      <label for="pink">
+        <input id="pink" type="radio" name="color" />Pink
+      </label>
+      <hr />
+      <h2>What Games Do You Plan on Playing?</h2>
+      <label for="ac">
+        <input id="ac" type="checkbox" name="games" /> Animal Crossing
+      </label>
+      <label for="poke">
+        <input id="poke" type="checkbox" name="games" /> Pokemon Sword & Shield
+      </label>
+      <label for="smash">
+        <input id="smash" type="checkbox" name="games" /> Super Smash Bros.
+        Ultimate
+      </label>
+      <label for="kart">
+        <input id="kart" type="checkbox" name="games" /> Mario kart
+      </label>
+      <br />
+      <hr />
+      <br />
+      <div id="submit">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
